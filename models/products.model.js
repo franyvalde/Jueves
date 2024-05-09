@@ -1,25 +1,19 @@
-const products = [
-    { id: 1, type: "mouse", description: "Logitech X987" },
-    { id: 2, type: "mouse", description: "Logitech X012" },
-    { id: 3, type: "mouse", description: "Logitech X8888" },
-    { id: 4, type: "hub", description: "Anker con USB" },
-    { id: 5, type: "hub", description: "Sin puerto USB" },
-  ];
+fetch("https://rickandmortyapi.com/api/character")
+    .then(response =>response.json())
+    .then(data =>console.log(data))
+    .catch(error=>console.log(error))
 
-const getProducts = () => {
-    if(products.length < 0){
-        return 'No hay productos en la lista. '
-    } else {
-        return products
+
+    const getCharacter = () =>{
+        return data
     }
-}
 
-const getProductsById = (id) => {
-    const product = products.find((element) => element.id == id);
-    return product || "Producto inexistente."
-}
+    const getCharacterById = (id)=>{
+        const ch = data.find((element)=>element.id == id)
+        return ch || "Personaje inexistente"
+    }
 
-export default {
-    getProducts,
-    getProductsById
-}
+    export default{
+        getCharacter,
+        getCharacterById
+    }

@@ -12,3 +12,7 @@ app.use("/api", (productsRoutes))
 
 app.listen(puerto, ()=> console.log('Server listening on ' + puerto))
 app.on("Error", (error)=> console.log("Server error "+error))
+
+
+
+

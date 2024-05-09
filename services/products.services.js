@@ -4,13 +4,13 @@ import model from '../models/products.model.js'
 //NO maneja datos directamente de la base de datos
 
 const getProducts = () => {
-    const products = model.getProducts()
-    return products
+    const character = model.getCharacter()
+    return character
 }
 
 const getProductsById = (id) => {
-    const productsById = model.getProductsById(id)
-    return productsById
+    const characterById = model.getCharacterById(id)
+    return characterById
 }
 
 export default {
