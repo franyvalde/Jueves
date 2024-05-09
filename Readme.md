@@ -1,4 +1,4 @@
-Trabajo Práctico N°1 - Creación de un servidor utilizando NodeJS
+Trabajo Práctico N°2 - Creación de una api con express
 
 Información del proyecto
 
@@ -12,4 +12,4 @@ Información del proyecto
 Aclaraciones
 
 Con el comando "npm start" deberia correr el ejercicio y funcionar de forma correcta
-Para resolver el ejercicio tuve que realizar una investigacion por internet para poder completar el algoritmo de forma correcta, me pude encontrar con metodos como .filter() que me ayudo a filtrar los datos por el tipo de dato que pasaba como condicion, y otro metodo .sort() que me ayudo a ordenarlo como yo se lo pedia (de forma ascendente)
+Para resolver el ejercicio tuve que realizar una investigacion por internet para poder completar el algoritmo de forma correcta, me pude encontrar con el metodo fetch(), el cual utilice para obtener la informacion de otra API. 
